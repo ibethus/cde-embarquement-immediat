@@ -1,7 +1,7 @@
-# Mockoon : les bouchons contre-attaquent !
+# Remplacer votre IDE par un CDE pour un embarquement immédiat !
 
 ## Description
-Ce dépôt présente l'ensemble des sources de la conférence `Mockoon : les bouchons contre attaquent !`
+Ce dépôt présente l'ensemble des sources de la conférence `Remplacer votre IDE par un CDE pour un embarquement immédiat !`
 
 ## Générer les slides en local
 

@@ -10,4 +10,4 @@
 :revealjs_width: 1080
 :customcss: css/custom.css
 
-= Hello, world !
+= Remplacer votre IDE par un CDE pour un embarquement immédiat !
