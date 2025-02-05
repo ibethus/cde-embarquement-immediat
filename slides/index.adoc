@@ -11,3 +11,9 @@
 :customcss: css/custom.css
 
 = Remplacer votre IDE par un CDE pour un embarquement immédiat !
+
+include::1-intro.adoc[]
+include::2-devcontainer.adoc[]
+include::3-cde.adoc[]
+include::4-conclusion.adoc[]
+
