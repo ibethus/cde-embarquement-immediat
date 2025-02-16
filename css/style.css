@@ -34,13 +34,11 @@ a {
 }
 
 .links {
-  display: flex;
-  flex-wrap: wrap;
-  height: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .links>div {
-  flex: 1;
   margin: 1rem;
   align-content: center;
   margin-top: 3rem;
@@ -67,6 +65,7 @@ html {
   top: 0;
   left: 0;
   background: transparent;
+  z-index: 900;
 }
 
 .stars-1 {
