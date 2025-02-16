@@ -34,22 +34,18 @@ a {
 }
 
 .links {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  row-gap: 10rem;
-  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  height: 90%;
+  margin-top: 3rem;
+}
+
+.links>div {
+  flex: 1;
   margin: 1rem;
-  margin-top: 5rem;
-  max-width: 1200px;
-  align-content: center;
 }
 
 /* Dessin et animation */
-/* svg {
-  width: 100%;
-  height: 100%;
-} */
-
 body {
   min-height: 100vh;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
@@ -136,19 +132,20 @@ body {
 }
 
 @keyframes wiggle2 {
-    0%, 100% {
-        transform: translateY(0) rotate(2deg);
-    }
-    50% {
-        transform: translateY(-10px) rotate(-1deg);
-    }
+  0%,
+  100% {
+    transform: translateY(0) rotate(2deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(-1deg);
+  }
 }
 
 .rocket-container {
   position: absolute;
   width: 6rem;
   offset-path: circle(80% at 0% 100%);
-  offset-rotate: auto 130deg;  /* Ajout de cette ligne pour l'orientation automatique */
+  offset-rotate: auto 130deg; /* Ajout de cette ligne pour l'orientation automatique */
   animation: rocketFly 10s linear infinite;
   z-index: 1000;
 }
