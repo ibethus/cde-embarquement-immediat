@@ -37,24 +37,24 @@ a {
   display: flex;
   flex-wrap: wrap;
   height: 90%;
-  margin-top: 3rem;
 }
 
 .links>div {
   flex: 1;
   margin: 1rem;
+  align-content: center;
+  margin-top: 3rem;
 }
 
 /* Dessin et animation */
-body {
-  min-height: 100vh;
+html {
+  height: 100%;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-  overflow: hidden;
 }
 
 .astronaut-container {
   offset-path: circle(30% at 50% 50%);
-  position: absolute;
+  position: fixed;
   width: 5rem;
   animation: float 60s linear infinite, rotate 30s linear infinite;
   z-index: 1000;
@@ -142,7 +142,7 @@ body {
 }
 
 .rocket-container {
-  position: absolute;
+  position: fixed;
   width: 6rem;
   offset-path: circle(80% at 0% 100%);
   offset-rotate: auto 130deg; /* Ajout de cette ligne pour l'orientation automatique */

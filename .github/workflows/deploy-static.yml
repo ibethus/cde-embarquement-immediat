@@ -24,7 +24,7 @@ jobs:
 
       - name: Create versions file 📄
         run: |
-          echo '<link rel="stylesheet" href="versions.css"><html lang="fr"><head><meta charset="UTF-8"><title>Versions</title></head><body><h1>Versions</h1><ul>' > versions.html
+          echo '<link rel="stylesheet" href="css/versions.css"><html lang="fr"><head><meta charset="UTF-8"><title>Versions</title></head><body><h1>Versions</h1><ul>' > versions.html
           git tag | while read -r tag; do
             echo "$tag"
             echo "<li><a href=/"$tag">$tag</a></li>" >> versions.html
