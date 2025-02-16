@@ -41,6 +41,7 @@ a {
   margin: 1rem;
   margin-top: 5rem;
   max-width: 1200px;
+  align-content: center;
 }
 
 /* Dessin et animation */
