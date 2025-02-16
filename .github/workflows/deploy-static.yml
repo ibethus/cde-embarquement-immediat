@@ -1,0 +1,40 @@
+name: Deploy static site on commit
+on:
+    push:
+      branches: [main]
+      
+permissions:
+  contents: write
+jobs:
+  deploy-static:
+    concurrency: ci-${{ github.ref }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+
+      - name: Copy static site to folder 📦
+        run: |
+          mkdir -p slides/build/
+          cp -r index.html assets css slides/build/
+        working-directory: .
+
+      - name: Create versions file 📄
+        run: |
+          echo '<link rel="stylesheet" href="versions.css"><html lang="fr"><head><meta charset="UTF-8"><title>Versions</title></head><body><h1>Versions</h1><ul>' > versions.html
+          git tag | while read -r tag; do
+            echo "$tag"
+            echo "<li><a href=/"$tag">$tag</a></li>" >> versions.html
+          done
+          echo '</ul></body></html>' >> versions.html
+        working-directory: slides/build/
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: slides/build # The folder the action should deploy.
+          branch: gh-pages
+          clean: false
