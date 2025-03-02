@@ -1,0 +1,63 @@
+== Environnement de développement conteneurisé
+
+[NOTE.speaker]
+--
+* Développer dans un conteneur avec tous les outils utiles au développement pré-installés et configurés
+* Standardiser les environnements de dévelopement des développeurs
+* DevContainers (Microsoft - json), DevFiles (RedHat - yaml)
+--
+
+[%auto-animate]
+=== DevContainers
+
+[.step]
+* **Spécification** qui formalise la **description** d'un **environnement de __développement__ conteneurisé**.
+* https://containers.dev/
+* https://github.com/devcontainers/spec
+
+[NOTE.speaker]
+--
+* Initiée par Microsoft depuis 2022
+* Uniquement pour le développement (et la CI) mais pas pour la prod
+* Couche d'abstraction au dessus de Docker pour simplifier la construction et l'exécution du conteneur
+* Implémentée par de nombreux IDE (VsCode, IntelliJ, ...)
+--
+
+=== Mise en oeuvre
+
+* Un répertoire `.devcontainer`
+* Un fichier `devcontainer.json`
+
+```json
+{
+	"name": "Spacesuits dev container",
+	"image": "node:22"
+}
+```
+
+[NOTE.speaker]
+--
+DEMO 1 :
+
+* devcontainer basique
+* ajout de feature
+* Configuration post création
+* Utilisation de template
+* Personnalisation de l'IDE
+--
+ 
+[%auto-animate]
+=== Récapitulatif
+
+[.step]
+* Simple
+* __Features__ pour installer des outils complémentaires
+* Configuration spécifique post création
+* Personnalisation de l'IDE
+* __Templates__ pré-définis ou personnel
+
+[NOTE.speaker]
+--
+* Et si j'ai pas docker ?
+* Et si ma machine n'a pas assez de ressources ?
+--
