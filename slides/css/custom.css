@@ -41,9 +41,9 @@
 body::after {
     content: url("../images/logo_event.png");
     position: fixed;
-    left: -150px;
-    bottom: 0px;
-    transform: scale(0.5);
+    left: -250px;
+    bottom: -50px;
+    transform: scale(0.3);
 }
 
 .title > .slide-background-content {
@@ -84,6 +84,10 @@ body::after {
 
 .reveal .controls .navigate-right {
     color: rgba(248,176,12,1);
+} */
+
+/* img {
+    border-radius: 35px;
 } */
 
 .sidebarblock.column.terminal {
