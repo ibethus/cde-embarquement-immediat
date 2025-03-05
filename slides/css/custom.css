@@ -41,9 +41,9 @@
 body::after {
     content: url("../images/logo_event.png");
     position: fixed;
-    left: -250px;
-    bottom: -50px;
-    transform: scale(0.3);
+    left: -150px;
+    bottom: 0px;
+    transform: scale(0.5);
 }
 
 .title > .slide-background-content {
