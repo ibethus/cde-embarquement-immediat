@@ -10,7 +10,6 @@
 :revealjs_width: 1080
 :customcss: css/custom.css
 
-= Sud-Ouest Days 2025
 
 include::0-fake.adoc[]
 include::1-intro.adoc[]
