@@ -1,0 +1,31 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "buildSlides",
+            "type": "shell",
+            "command": "docker run --rm -v $(pwd):/documents asciidoctor/docker-asciidoctor asciidoctor-revealjs index.adoc",
+            "windows": {
+                "command": "docker run --rm -v $(pwd -W):/documents asciidoctor/docker-asciidoctor asciidoctor-revealjs index.adoc"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "never",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "options": {
+                "cwd": "slides"
+            },
+            "problemMatcher": []
+        }
+    ]
+}
