@@ -1,0 +1,30 @@
+== C'est bien les CDE ? 
+
+=== Limitations
+
+[.step]
+* Accès au réseau 
+* Cher *ou* besoin d'une infra dédiée
+* Complexité initiale de configuration 
+* Techno encore récente
+
+[NOTE.speaker]
+--
+* Réseau : les machines savent se reconnecter en cas de coupure
+* Prix : calcul à faire, les machines des devs peuvent du coup couter moins cher
+* Techno récente : encore des progrès à faire sur l'intégration
+--
+
+=== Pour quel public ?
+
+[.step]
+* Grandes équipes 
+* Turnover important 
+* Configuration complexe
+* Sécurité cruciale
+
+[%notitle]
+=== Conclusion
+Merci !
+
+image::images/qrcode.png[width=20%]
