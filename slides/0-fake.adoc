@@ -1,0 +1,16 @@
+== Découvrons l'histoire du XML
+
+[NOTE.speaker]
+--
+**Scénette**
+Nico arrive, il démarre lundi, liste ses problèmes :
+
+* -"Besoin d'aide pour le poste de dev"
+* -"Tiens, voilà la documentation" 
+* -"JDK, BDD, Certificats, accès envs de recette"
+* -"Je pourrai pas démarrer lundi, j'envoie un mail au CP"
+* -"Ca vous est déjà arrivé ?"
+* -"Avez-vous essayé de solutionner ?"
+* -"Autrement qu'en mettant à jour la doc ?"
+* -"On va vous présenter une solution qui _pourrait_ être *la* solution"
+--
