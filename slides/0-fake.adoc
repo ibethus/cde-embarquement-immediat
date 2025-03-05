@@ -1,5 +1,6 @@
 [%notitle]
-== !
+== Remplacer votre IDE par un CDE pour un embarquement immédiat !
+
 image::images/main_background.png[background, size=fill]
 
 === Découvrons l'histoire du XML
