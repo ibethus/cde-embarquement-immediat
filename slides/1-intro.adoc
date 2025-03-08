@@ -26,7 +26,7 @@ icon:github[] nicolasguilhem
 [.column]
 --
 [.rounded]
-image::images/nico.png[]
+image::images/nico.png[width=400]
 --
 
 [%notitle.auto-animate.columns.is-vcentered.transparency]
