@@ -1,17 +1,32 @@
 == C'est bien les CDE ? 
 
+[.smaller,step=1]
+(spoiler : oui)
+
+[.columns]
 === Limitations
 
-[.step]
-* Accès au réseau 
-* Cher *ou* besoin d'une infra dédiée
-* Complexité initiale de configuration 
-* Techno encore récente
+[.column]
+--
+[step=1]
+📡️ Accès au réseau 
+[step=3]
+💰️ Cher *ou* besoin d'une infra dédiée
+--
+
+[.column]
+--
+[step=2]
+🎛️ Complexité initiale de configuration (parfois)
+[step=4]
+👶️ Techno encore récente
+--
 
 [NOTE.speaker]
 --
 * Réseau : les machines savent se reconnecter en cas de coupure
 * Prix : calcul à faire, les machines des devs peuvent du coup couter moins cher
+* Complexité : Eventuellement setup initial
 * Techno récente : encore des progrès à faire sur l'intégration
 --
 
@@ -25,6 +40,7 @@
 
 [%notitle]
 === Conclusion
-Merci !
 
 image::images/qrcode.png[width=20%]
+
+Merci !

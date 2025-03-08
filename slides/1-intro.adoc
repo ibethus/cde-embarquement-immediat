@@ -25,6 +25,7 @@ icon:github[] nicolasguilhem
 
 [.column]
 --
+[.rounded]
 image::images/nico.png[width=400]
 --
 
@@ -50,5 +51,6 @@ icon:github[] ibethus
 
 [.column]
 --
+[.rounded]
 image::images/ibethus.png[]
 --

@@ -17,12 +17,27 @@ D'autres avantages :
 * économie d'échelle sur les machines
 --
 
+[.columns]
 === Adopté par les _majors_
 
-[.step]
-* Microsoft codespace
-* Google Cloud Workstations
-* RedHat OpenShift Dev Spaces
+[.column.fade-up,step=2]
+--
+image::images/codespaces.png[width=30%]
+
+Microsoft GitHub codespace
+--
+
+[.column.fade-up, step=1]
+--
+image::images/google_workstation.png[width=30%]
+Google Cloud Workstations
+--
+
+[.column.fade-up, step=3]
+--
+image::images/devspaces.png[width=30%]
+RedHat OpenShift Dev Spaces
+--
 
 [NOTE.speaker]
 --
@@ -31,19 +46,42 @@ D'autres avantages :
 * 
 --
 
+[.columns]
 === Comment ça marche ?
 
-Deux modes :
+[.column.fade-right, step=1]
+--
+"A la main" : 
 
-[.step]
-* "à la main" : géré par le développeur
-* à distance : géré à travers une web UI
+géré par le développeur
+--
 
+[.column.fade-left, step=2]
+--
+A distance : 
+
+géré à travers une web UI
+--
+
+[NOTE.speaker]
+--
+Il existe deux modes de fonctionnement distincts
+--
+
+[.columns.is-vcentered]
 === A la main
 
-[.step]
-* Daytona
-* DevPod 
+[.column.fade-right, step=1]
+--
+image::images/daytonaio_logo.jpeg[width=30%]
+Daytona
+--
+
+[.column.fade-left, step=2]
+--
+image::images/devpod-logo.png[width=30%]
+DevPod 
+--
 
 [NOTE.speaker]
 --
@@ -52,7 +90,10 @@ Deux modes :
 
 [%notitle]
 === devpod 1
+[.rounded]
 image::images/devpod1.svg[]
+[.smaller]
+_https://github.com/loft-sh/devpod/tree/main/docs/uml/c4_machines.puml_
 
 [NOTE.speaker]
 --
@@ -63,7 +104,10 @@ image::images/devpod1.svg[]
 
 [%notitle]
 === devpod 2
+[.rounded]
 image::images/devpod2.svg[]
+[.smaller]
+_https://github.com/loft-sh/devpod/tree/main/docs/uml/c4_machines.puml_
 
 [NOTE.speaker]
 --
@@ -80,26 +124,53 @@ image::images/devpod2.svg[]
 * Expliquer que le backend de l'IDE tourne sur le provider et que le frontend tourne en local
 --
 
+[%auto-animate.columns.is-vcentered]
 === A distance
 
-Quelques options :
-
-[.step]
-* coder (open source)
-* Theia Cloud (Eclipse - open source)
-* Gitpod
-* Lapdev
+[.column.fade-right, step=2]
+--
+image::images/gitpod.png[width=30%]
+Gitpod
+--
+[.column.fade-left, step=1]
+--
+image::images/lapdev_logo.svg[width=30%]
+Lapdev
+--
 
 [NOTE.speaker]
 --
 * La plupart des solutions de sont pas 100% gratuites ou open source, même en self hosted
 --
 
+[%auto-animate.columns.is-vcentered]
+=== A distance
+
+[.column.fade-right,step=2]
+--
+image::images/Coder_Logo.png[width=60%]
+coder
+--
+
+[.column.fade-left, step=1]
+--
+image::images/theia.png[width=30%]
+Theia Cloud
+--
+
+[NOTE.speaker]
+--
+* Coder est une solution très intéressante car elle peut être totalement self hosted
+--
+
+
 [%notitle]
 === Coder
-
-image::images/coder-diagram.png[width=70%]
 Architecture de _Coder_
+[.rounded]
+image::images/coder-diagram.png[width=60%]
+[.smaller]
+_https://coder.com/docs/admin/infrastructure/architecture_
 
 [NOTE.speaker]
 --
