@@ -3,7 +3,8 @@
 
 image::images/main_background.png[background, size=fill]
 
-=== Découvrons l'histoire du XML
+=== MythBuster
+Le cheval blanc d'Henri IV était-il blanc ?
 
 [NOTE.speaker]
 --

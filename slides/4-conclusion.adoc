@@ -3,22 +3,22 @@
 [.smaller,step=1]
 (spoiler : oui)
 
-[.columns]
+[.columns.is-vcentered]
 === Limitations
 
 [.column]
 --
-[step=1]
+[.fade-left,step=1]
 📡️ Accès au réseau 
-[step=3]
+[.fade-left,step=3]
 💰️ Cher *ou* besoin d'une infra dédiée
 --
 
 [.column]
 --
-[step=2]
+[.fade-right,step=2]
 🎛️ Complexité initiale de configuration (parfois)
-[step=4]
+[.fade-right,step=4]
 👶️ Techno encore récente
 --
 
@@ -30,6 +30,35 @@
 * Techno récente : encore des progrès à faire sur l'intégration
 --
 
+[.columns.is-vcentered]
+=== Avantages
+
+[.column]
+--
+[.fade-right,step=1]
+⚡️ Onboarding instantané
+[.fade-right,step=3]
+🔒️ Sécurisé et isolé
+--
+
+[.column]
+--
+[.fade-left,step=2]
+🔄️ Environnement reproductible
+[.fade-left,step=4]
+🛠️ Configuration centralisée
+--
+
+[NOTE.speaker]
+--
+* Onboarding : les nouveaux devs peuvent travailler le jour 0
+* Reproductible : même versions partout
+* Sécurité : code source ne quitte pas le serveur
+* Configuration : gérée par l'équipe DevOps
+Mais aussi :
+* Pas besoin de machines de guerre pour les devs
+--
+
 === Pour quel public ?
 
 [.step]
@@ -37,6 +66,20 @@
 * Turnover important 
 * Configuration complexe
 * Sécurité cruciale
+
+=== Aller plus loin
+
+* https://devfest2024.gdgnantes.com/sessions/developpe_sur_un_toaster_grace_a_coder/[🎬️ Développe sur un toaster grâce à Coder]
+* https://coder.com/docs/admin/infrastructure[📄️ Coder infrastructure]
+* https://eclipse.dev/che/docs/stable/overview/introduction-to-eclipse-che/[📄️ Eclipse Che]
+
+[NOTE.speaker]
+--
+Liens vers :
+* La conf devfest sur coder
+* L'infrastructure de coder
+* La doc de Eclipse Che (utilise les DevFiles)
+--
 
 [%notitle]
 === Conclusion

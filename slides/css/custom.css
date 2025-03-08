@@ -48,11 +48,10 @@ body::after {
 
 .title > .slide-background-content {
     filter: blur(2px) brightness(120%);
-    opacity: 0.8;
 }
 
 .transparency.slide-background.present {
-    opacity: 0.20;
+    opacity: 0.15;
 }
 
 .smaller {

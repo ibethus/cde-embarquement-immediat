@@ -1,24 +1,28 @@
 == Cloud Development Environement
 
-=== Historique
+[.columns.is-vcentered]
+=== Les précurseurs
 
-[.step]
-* Né en 2023 dans le sillage des DevContainers
-* Permet de bénéficier des performances du serveur distant (bande passante, ram, cpu...)
-* Promesse du "zéro configuration"
-* et plus encore..!
+[.column]
+--
+image::images/Cloud9IDE.png[width=30%]
+Cloud9 (2010)
+--
+
+[.column]
+--
+image::images/codeanywhere.png[width=25%]
+Codeanywhere (2013)
+--
 
 [NOTE.speaker]
 --
-D'autres avantages :
-
-* sécurité renforcée 
-* observabilité des machines virtuelles
-* économie d'échelle sur les machines
+* Attention Cloud9 est aussi une équipe de esport américaine
+* Révolutionnaire à l'époque mais grosse limitation : pas de conteneurisation
 --
 
 [.columns]
-=== Adopté par les _majors_
+=== Adoption par les _majors_
 
 [.column.fade-up,step=2]
 --
@@ -41,9 +45,7 @@ RedHat OpenShift Dev Spaces
 
 [NOTE.speaker]
 --
-* Ce sont tous des services managés dans le cloud = cher
-* Quelques free tier pour tester 
-* 
+* Eclipse Che : premier CDE sur Kubernetes, racheté par RedHat en 2019
 --
 
 [.columns]
@@ -176,6 +178,8 @@ _https://coder.com/docs/admin/infrastructure/architecture_
 --
 * Le service *coderd* est chargé de la création des workspaces, pod, etc. et de la connexion des machines entre elles
 * Cette infra peut être self-hosted
+* Les workspaces on des durées de vie limitées spécifées par l'admin
+* Si le workspace n'est pas détruit, les modifs non comitées sont sauvegardée malgré tout
 --
 
 === Démo : Codespace
