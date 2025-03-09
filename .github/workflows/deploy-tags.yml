@@ -52,7 +52,7 @@ jobs:
 
       - name: Copy static site to folder 📦
         run: |
-          cp -r index.html assets css slides/build/
+          cp -r index.html versions.html assets css slides/build/
         working-directory: .
 
       - name: Deploy 🚀
