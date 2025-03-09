@@ -1,0 +1,26 @@
+[%notitle]
+== Remplacer votre IDE par un CDE pour un embarquement immédiat !
+
+image::images/main_background.png[background, size=fill]
+
+=== MythBuster
+Le cheval blanc d'Henri IV était-il blanc ?
+
+[NOTE.speaker]
+--
+Le XML est né en 1998, issu de SGML (1986).
+Il a connu son âge d'or dans les années 2000 avec SOAP et les Web Services.
+Aujourd'hui, bien que JSON soit plus populaire, XML reste utilisé dans de nombreux domaines.
+
+**Scénette**
+Nico arrive, il démarre lundi, liste ses problèmes :
+
+* -"Besoin d'aide pour le poste de dev"
+* -"Tiens, voilà la documentation" 
+* -"JDK, BDD, Certificats, accès envs de recette"
+* -"Je pourrai pas démarrer lundi, j'envoie un mail au CP"
+* -"Ca vous est déjà arrivé ?"
+* -"Avez-vous essayé de solutionner ?"
+* -"Autrement qu'en mettant à jour la doc ?"
+* -"On va vous présenter une solution qui _pourrait_ être *la* solution"
+--

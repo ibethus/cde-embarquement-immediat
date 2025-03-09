@@ -1,0 +1,91 @@
+== C'est bien les CDE ? 
+
+[.smaller,step=1]
+(spoiler : oui)
+
+[.columns.is-vcentered]
+=== Limitations
+
+[.column]
+--
+[.fade-left,step=1]
+📡️ Accès au réseau 
+[.fade-left,step=3]
+💰️ Cher *ou* besoin d'une infra dédiée
+--
+
+[.column]
+--
+[.fade-right,step=2]
+🎛️ Complexité initiale de configuration (parfois)
+[.fade-right,step=4]
+👶️ Techno encore récente
+--
+
+[NOTE.speaker]
+--
+* Réseau : les machines savent se reconnecter en cas de coupure
+* Prix : calcul à faire, les machines des devs peuvent du coup couter moins cher
+* Complexité : Eventuellement setup initial
+* Techno récente : encore des progrès à faire sur l'intégration
+--
+
+[.columns.is-vcentered]
+=== Avantages
+
+[.column]
+--
+[.fade-right,step=1]
+⚡️ Onboarding instantané
+[.fade-right,step=3]
+🔒️ Sécurisé et isolé
+--
+
+[.column]
+--
+[.fade-left,step=2]
+🔄️ Environnement reproductible
+[.fade-left,step=4]
+🛠️ Configuration centralisée
+--
+
+[NOTE.speaker]
+--
+* Onboarding : les nouveaux devs peuvent travailler le jour 0
+* Reproductible : même versions partout
+* Sécurité : code source ne quitte pas le serveur
+* Configuration : gérée par l'équipe DevOps
+Mais aussi :
+* Pas besoin de machines de guerre pour les devs
+--
+
+=== Pour quel public ?
+
+[.step]
+* Grandes équipes 
+* Turnover important 
+* Configuration complexe
+* Sécurité cruciale
+
+=== Aller plus loin
+
+* https://devfest2024.gdgnantes.com/sessions/developpe_sur_un_toaster_grace_a_coder/[🎬️ Développe sur un toaster grâce à Coder]
+* https://coder.com/docs/admin/infrastructure[📄️ Coder infrastructure]
+* https://eclipse.dev/che/docs/stable/overview/introduction-to-eclipse-che/[📄️ Eclipse Che]
+* https://github.com/manekinekko/awesome-devcontainers[📄️ Awesome DevContainer]
+
+[NOTE.speaker]
+--
+Liens vers :
+* La conf devfest sur coder
+* L'infrastructure de coder
+* La doc de Eclipse Che (utilise les DevFiles)
+* Awesome devcontainer : liste de template de devcontainer
+--
+
+[%notitle]
+=== Conclusion
+
+image::images/qrcode.png[width=20%]
+
+Merci !

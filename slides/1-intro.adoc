@@ -1,0 +1,56 @@
+[%auto-animate.columns.is-vcentered.transparency]
+== Remplacer votre IDE par un CDE pour un embarquement immédiat !
+image::images/main_background.png[background, size=fill]
+
+[%notitle.auto-animate.columns.is-vcentered.transparency]
+=== Présentation
+
+image::images/main_background.png[background, size=fill]
+
+[.column.has-text-right.is-two-fifth]
+****
+[.important-text]
+--
+*Nicolas Guilhem*
+
+Tech Lead | Architecte
+--
+
+image:images/onepoint.png[width=200]
+
+[.vertical-align-middle]
+icon:github[] nicolasguilhem
+
+****
+
+[.column]
+--
+[.rounded]
+image::images/nico.png[width=400]
+--
+
+[%notitle.auto-animate.columns.is-vcentered.transparency]
+=== Présentation
+
+image::images/main_background.png[background, size=fill]
+
+[.column.has-text-right.is-two-fifth]
+****
+[.important-text]
+--
+*Ivan Béthus*
+
+Tech Lead
+--
+
+image:images/onepoint.png[width=200]
+
+[.vertical-align-middle]
+icon:github[] ibethus
+****
+
+[.column]
+--
+[.rounded]
+image::images/ibethus.png[]
+--
