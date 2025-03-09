@@ -72,6 +72,7 @@ Mais aussi :
 * https://devfest2024.gdgnantes.com/sessions/developpe_sur_un_toaster_grace_a_coder/[🎬️ Développe sur un toaster grâce à Coder]
 * https://coder.com/docs/admin/infrastructure[📄️ Coder infrastructure]
 * https://eclipse.dev/che/docs/stable/overview/introduction-to-eclipse-che/[📄️ Eclipse Che]
+* https://github.com/manekinekko/awesome-devcontainers[📄️ Awesome DevContainer]
 
 [NOTE.speaker]
 --
@@ -79,6 +80,7 @@ Liens vers :
 * La conf devfest sur coder
 * L'infrastructure de coder
 * La doc de Eclipse Che (utilise les DevFiles)
+* Awesome devcontainer : liste de template de devcontainer
 --
 
 [%notitle]
