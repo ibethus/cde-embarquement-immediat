@@ -40,6 +40,16 @@ jobs:
           cp -r reveal.js/plugin build/${{ github.ref_name }}/reveal.js/
         working-directory: slides
 
+      - name: Create versions file 📄
+        run: |
+          echo '<link rel="stylesheet" href="css/versions.css"><html lang="fr"><head><meta charset="UTF-8"><title>Versions</title></head><body><h1>Versions</h1><ul>' > versions.html
+          git tag | while read -r tag; do
+            echo "$tag"
+            echo "<li><a href=/"$tag">🌐️ $tag</a></li>" >> versions.html
+          done
+          echo '</ul></body></html>' >> versions.html
+        working-directory: slides/build/
+
       - name: Copy static site to folder 📦
         run: |
           cp -r index.html assets css slides/build/
