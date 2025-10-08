@@ -1,0 +1,26 @@
+@startuml
+hide empty description
+
+state "image créée" as created
+state "conteneur démarré" as started
+state "conteneur arrêté" as stoped
+state "conteneur supprimé" as dropped
+
+[*] --> created : build
+note on link
+  initializeCommand
+end note
+created -> started : up
+note on link
+  postCreateCommand
+end note
+started -> stoped : stop
+stoped --> started : start
+note on link
+  postStartCommand
+end note
+stoped -> dropped : down
+started -> dropped : down
+dropped --> [*]
+
+@enduml

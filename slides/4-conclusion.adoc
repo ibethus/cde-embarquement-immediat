@@ -66,6 +66,8 @@ Mais aussi :
 * Turnover important 
 * Configuration complexe
 * Sécurité cruciale
+* Formation tech
+* Projet open-source
 
 === Aller plus loin
 

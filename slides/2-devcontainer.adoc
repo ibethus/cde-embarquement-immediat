@@ -50,6 +50,7 @@ image::images/dev-containers/2.png[width=300]
 [NOTE.speaker]
 --
 * Couche d'abstraction au dessus de Docker pour simplifier la construction et l'exécution du conteneur
+* on parle de docker mais fonctionne avec d'autres runtimes (podman, ...)
 * Injection config (git, ssh)
 * Installation de fonctionnalités supplémentaires
 * Montage auto de volume (sources)
@@ -101,6 +102,23 @@ Config minimum
 * Faire ses propres features
 --
 
+=== Features
+
+[source%linenums,sh,highlight=1..3]
+----
+nanolayer install devcontainer-feature \
+    "ghcr.io/devcontainers-extra/features/npm-package:1.0.3" \
+    --option package='@angular/cli' --option version="$VERSION"
+
+echo 'Angular CLI version $VERSION installed'
+----
+
+[NOTE.speaker]
+--
+* Fichier JSON descriptif de la feature (id, nom, doc, options, prérequis)
+* Script shell (nanolayer --> outils install layer docker avec commande devcontainer-feature permettant d'exécuter une devcontainer-feature)
+--
+
 === Configuration
 
 [source%linenums,json,highlight=9..10]
@@ -124,6 +142,7 @@ Config minimum
 * Forwarding de port
 * Point de montage
 * Variables d'environnement
+* optim : à la construction de l'image plutôt qu'au démarrage du conteneur
 --
 
 === Personnalisation de l'IDE
@@ -133,15 +152,15 @@ Config minimum
 {
 	"forwardPorts": [ 4200 ],
 	"customizations": {
-	  "vscode": {
-		"settings": {
-		  "editor.tabSize": 2
-		},
-		"extensions": [
-		  "Angular.ng-template",
-		  "ms-azuretools.vscode-docker"
-		]
-	  }
+		"vscode": {
+			"settings": {
+			"editor.tabSize": 2
+			},
+			"extensions": [
+			"Angular.ng-template",
+			"ms-azuretools.vscode-docker"
+			]
+		}
 	}
 }
 ----
