@@ -182,7 +182,7 @@ _https://coder.com/docs/admin/infrastructure/architecture_
 * Si le workspace n'est pas détruit, les modifs non comitées sont sauvegardée malgré tout
 --
 
-=== Démo : Codespace
+=== Démo
 
 [NOTE.speaker]
 --
