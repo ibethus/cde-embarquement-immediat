@@ -413,10 +413,7 @@ ul.byline {
 ul.byline li + li {
   margin-top: 0.25em;
 }
-</style><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/v4-shims.min.css"><link rel="stylesheet" href="css/custom.css"></head><body><div class="reveal"><div class="slides"><section><section id="_remplacer_votre_ide_par_un_cde_pour_un_embarquement_immédiat" data-background-image="images/main_background.png" data-background-size="fill"><div class="slide-content"></div></section><section id="_mythbuster"><h2>MythBuster</h2><div class="slide-content"><div class="paragraph"><p>Le cheval blanc d&#8217;Henri IV était-il blanc ?</p></div>
-<aside class="notes"><div class="paragraph"><p>Le XML est né en 1998, issu de SGML (1986).
-Il a connu son âge d&#8217;or dans les années 2000 avec SOAP et les Web Services.
-Aujourd&#8217;hui, bien que JSON soit plus populaire, XML reste utilisé dans de nombreux domaines.</p></div>
+</style><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/v4-shims.min.css"><link rel="stylesheet" href="css/custom.css"></head><body><div class="reveal"><div class="slides"><section><section id="_remplacer_votre_ide_par_un_cde_pour_un_embarquement_immédiat" data-background-image="images/main_background.png" data-background-size="fill"><div class="slide-content"></div></section><section id="_les_api_restfull_sont_elles_le_futur_du_web"><h2>Les API RestFull sont-elles le futur du web ?</h2><div class="slide-content"><aside class="notes"><div class="ulist"><ul><li><p>L&#8217;architecture REST est devenue incontournable pour construire des APIs Web</p></li><li><p>Elle permet la communication entre systèmes via HTTP de manière standardisée</p></li><li><p>Les principes REST favorisent la scalabilité et la maintenabilité</p></li><li><p>Mais REST n&#8217;est qu&#8217;un style d&#8217;architecture parmi d&#8217;autres (GraphQL, gRPC&#8230;&#8203;)</p></li></ul></div>
 <div class="paragraph"><p><strong>Scénette</strong>
 Nico arrive, il démarre lundi, liste ses problèmes :</p></div>
 <div class="ulist"><ul><li><p>-"Besoin d&#8217;aide pour le poste de dev"</p></li><li><p>-"Tiens, voilà la documentation"</p></li><li><p>-"JDK, BDD, Certificats, accès envs de recette"</p></li><li><p>-"Je pourrai pas démarrer lundi, j&#8217;envoie un mail au CP"</p></li><li><p>-"Ca vous est déjà arrivé ?"</p></li><li><p>-"Avez-vous essayé de solutionner ?"</p></li><li><p>-"Autrement qu&#8217;en mettant à jour la doc ?"</p></li><li><p>-"On va vous présenter une solution qui <em>pourrait</em> être <strong>la</strong> solution"</p></li></ul></div></aside></div></section></section>
@@ -435,7 +432,7 @@ Nico arrive, il démarre lundi, liste ses problèmes :</p></div>
 <div class="openblock fragment"><div class="content"><div class="ulist"><ul><li><p><a href="https://containers.dev/" class="bare">https://containers.dev/</a></p></li><li><p><a href="https://github.com/devcontainers/spec" class="bare">https://github.com/devcontainers/spec</a></p></li></ul></div></div></div>
 <aside class="notes"><div class="ulist"><ul><li><p>Initiée par Microsoft depuis 2022</p></li><li><p>Uniquement pour le développement (et la CI) mais pas pour la prod</p></li><li><p>Microsoft - json (DevFiles - RedHat - yaml)</p></li><li><p>Implémentée par de nombreux IDE (VsCode, IntelliJ, &#8230;&#8203;)</p></li><li><p>Implémentation par défaut via une CLI</p></li><li><p>Ivan : En fait c&#8217;est un docker-compose ?</p></li></ul></div></aside></div></section><section id="_devcontainers_vs_docker_compose" class="columns is-vcentered" data-auto-animate><h2>DevContainers vs Docker-Compose</h2><div class="slide-content"><div class="openblock column has-text-right fragment"><div class="content"><div class="imageblock"><img src="images/dev-containers/1.png" alt="1" width="350"></div></div></div>
 <div class="openblock column has-text-left fragment"><div class="content"><div class="imageblock"><img src="images/dev-containers/2.png" alt="2" width="300"></div></div></div>
-<aside class="notes"><div class="ulist"><ul><li><p>Couche d&#8217;abstraction au dessus de Docker pour simplifier la construction et l&#8217;exécution du conteneur</p></li><li><p>Injection config (git, ssh)</p></li><li><p>Installation de fonctionnalités supplémentaires</p></li><li><p>Montage auto de volume (sources)</p></li><li><p>Build -&#8594; create -&#8594; start/stop &#8230;&#8203;</p></li></ul></div></aside></div></section><section id="_mise_en_oeuvre" data-auto-animate><h2>Mise en oeuvre</h2><div class="slide-content"><div class="openblock fragment"><div class="content"><div class="ulist"><ul><li><p>Un répertoire <code>.devcontainer</code></p></li><li><p>Un fichier <code>devcontainer.json</code></p></li></ul></div></div></div>
+<aside class="notes"><div class="ulist"><ul><li><p>Couche d&#8217;abstraction au dessus de Docker pour simplifier la construction et l&#8217;exécution du conteneur</p></li><li><p>on parle de docker mais fonctionne avec d&#8217;autres runtimes (podman, &#8230;&#8203;)</p></li><li><p>Injection config (git, ssh)</p></li><li><p>Installation de fonctionnalités supplémentaires</p></li><li><p>Montage auto de volume (sources)</p></li><li><p>Build -&#8594; create -&#8594; start/stop &#8230;&#8203;</p></li></ul></div></aside></div></section><section id="_mise_en_oeuvre" data-auto-animate><h2>Mise en oeuvre</h2><div class="slide-content"><div class="openblock fragment"><div class="content"><div class="ulist"><ul><li><p>Un répertoire <code>.devcontainer</code></p></li><li><p>Un fichier <code>devcontainer.json</code></p></li></ul></div></div></div>
 <div class="listingblock fragment"><div class="content"><pre class="highlightjs highlight"><code class="language-json hljs" data-noescape="true" data-line-numbers="" data-lang="json">{
 	"name": "Spacesuits dev container",
 	"image": "node:22"
@@ -449,7 +446,12 @@ Nico arrive, il démarre lundi, liste ses problèmes :</p></div>
 		}
 	}
 }</code></pre></div></div>
-<aside class="notes"><div class="ulist"><ul><li><p>Script shell exécuté à la construction de l&#8217;image</p></li><li><p>1 millier de features disponibles</p></li><li><p>Faire ses propres features</p></li></ul></div></aside></div></section><section id="_configuration"><h2>Configuration</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlightjs highlight"><code class="language-json hljs" data-noescape="true" data-line-numbers="9,10" data-lang="json">{
+<aside class="notes"><div class="ulist"><ul><li><p>Script shell exécuté à la construction de l&#8217;image</p></li><li><p>1 millier de features disponibles</p></li><li><p>Faire ses propres features</p></li></ul></div></aside></div></section><section id="_features_2"><h2>Features</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlightjs highlight"><code class="language-sh hljs" data-noescape="true" data-line-numbers="1,2,3" data-lang="sh">nanolayer install devcontainer-feature \
+    "ghcr.io/devcontainers-extra/features/npm-package:1.0.3" \
+    --option package='@angular/cli' --option version="$VERSION"
+
+echo 'Angular CLI version $VERSION installed'</code></pre></div></div>
+<aside class="notes"><div class="ulist"><ul><li><p>Fichier JSON descriptif de la feature (id, nom, doc, options, prérequis)</p></li><li><p>Script shell (nanolayer -&#8594; outils install layer docker avec commande devcontainer-feature permettant d&#8217;exécuter une devcontainer-feature)</p></li></ul></div></aside></div></section><section id="_configuration"><h2>Configuration</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlightjs highlight"><code class="language-json hljs" data-noescape="true" data-line-numbers="9,10" data-lang="json">{
 	"name": "Spacesuits dev container",
 	"image": "node:22",
 	"features": {
@@ -460,18 +462,18 @@ Nico arrive, il démarre lundi, liste ses problèmes :</p></div>
 	"postCreateCommand": "npm i",
 	"forwardPorts": [ 4200 ]
 }</code></pre></div></div>
-<aside class="notes"><div class="ulist"><ul><li><p>Init : config post création</p></li><li><p>Forwarding de port</p></li><li><p>Point de montage</p></li><li><p>Variables d&#8217;environnement</p></li></ul></div></aside></div></section><section id="_personnalisation_de_lide"><h2>Personnalisation de l&#8217;IDE</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlightjs highlight"><code class="language-json hljs" data-noescape="true" data-line-numbers="3,4,5,6,7,8,9,10,11,12,13" data-lang="json">{
+<aside class="notes"><div class="ulist"><ul><li><p>Init : config post création</p></li><li><p>Forwarding de port</p></li><li><p>Point de montage</p></li><li><p>Variables d&#8217;environnement</p></li><li><p>optim : à la construction de l&#8217;image plutôt qu&#8217;au démarrage du conteneur</p></li></ul></div></aside></div></section><section id="_personnalisation_de_lide"><h2>Personnalisation de l&#8217;IDE</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlightjs highlight"><code class="language-json hljs" data-noescape="true" data-line-numbers="3,4,5,6,7,8,9,10,11,12,13" data-lang="json">{
 	"forwardPorts": [ 4200 ],
 	"customizations": {
-	  "vscode": {
-		"settings": {
-		  "editor.tabSize": 2
-		},
-		"extensions": [
-		  "Angular.ng-template",
-		  "ms-azuretools.vscode-docker"
-		]
-	  }
+		"vscode": {
+			"settings": {
+				"editor.tabSize": 2
+			},
+			"extensions": [
+				"Angular.ng-template",
+				"ms-azuretools.vscode-docker"
+			]
+		}
 	}
 }</code></pre></div></div>
 <aside class="notes"><div class="ulist"><ul><li><p>Spécifique a chaque IDE</p></li></ul></div></aside></div></section><section id="_démo" data-auto-animate><h2>Démo</h2></section><section id="_récapitulatif" data-auto-animate><h2>Récapitulatif</h2><div class="slide-content"><div class="ulist step"><ul><li class="fragment"><p>Simple</p></li><li class="fragment"><p><em>Features</em></p></li><li class="fragment"><p>Configuration</p></li><li class="fragment"><p>Personnalisation de l&#8217;IDE</p></li><li class="fragment"><p><em>Templates</em></p></li></ul></div>
@@ -519,7 +521,7 @@ Nico arrive, il démarre lundi, liste ses problèmes :</p></div>
 <div class="openblock column"><div class="content"><div class="paragraph fade-left fragment" data-fragment-index="2"><p>🔄️ Environnement reproductible</p></div>
 <div class="paragraph fade-left fragment" data-fragment-index="4"><p>🛠️ Configuration centralisée</p></div></div></div>
 <aside class="notes"><div class="ulist"><ul><li><p>Onboarding : les nouveaux devs peuvent travailler le jour 0</p></li><li><p>Reproductible : même versions partout</p></li><li><p>Sécurité : code source ne quitte pas le serveur</p></li><li><p>Configuration : gérée par l&#8217;équipe DevOps
-Mais aussi :</p></li><li><p>Pas besoin de machines de guerre pour les devs</p></li></ul></div></aside></div></section><section id="_pour_quel_public"><h2>Pour quel public ?</h2><div class="slide-content"><div class="ulist step"><ul><li class="fragment"><p>Grandes équipes</p></li><li class="fragment"><p>Turnover important</p></li><li class="fragment"><p>Configuration complexe</p></li><li class="fragment"><p>Sécurité cruciale</p></li></ul></div></div></section><section id="_aller_plus_loin"><h2>Aller plus loin</h2><div class="slide-content"><div class="ulist"><ul><li><p><a href="https://devfest2024.gdgnantes.com/sessions/developpe_sur_un_toaster_grace_a_coder/">🎬️ Développe sur un toaster grâce à Coder</a></p></li><li><p><a href="https://coder.com/docs/admin/infrastructure">📄️ Coder infrastructure</a></p></li><li><p><a href="https://eclipse.dev/che/docs/stable/overview/introduction-to-eclipse-che/">📄️ Eclipse Che</a></p></li><li><p><a href="https://github.com/manekinekko/awesome-devcontainers">📄️ Awesome DevContainer</a></p></li></ul></div>
+Mais aussi :</p></li><li><p>Pas besoin de machines de guerre pour les devs</p></li></ul></div></aside></div></section><section id="_pour_quel_public"><h2>Pour quel public ?</h2><div class="slide-content"><div class="ulist step"><ul><li class="fragment"><p>Grandes équipes</p></li><li class="fragment"><p>Turnover important</p></li><li class="fragment"><p>Configuration complexe</p></li><li class="fragment"><p>Sécurité cruciale</p></li><li class="fragment"><p>Formation tech</p></li><li class="fragment"><p>Projet open-source</p></li></ul></div></div></section><section id="_aller_plus_loin"><h2>Aller plus loin</h2><div class="slide-content"><div class="ulist"><ul><li><p><a href="https://devfest2024.gdgnantes.com/sessions/developpe_sur_un_toaster_grace_a_coder/">🎬️ Développe sur un toaster grâce à Coder</a></p></li><li><p><a href="https://coder.com/docs/admin/infrastructure">📄️ Coder infrastructure</a></p></li><li><p><a href="https://eclipse.dev/che/docs/stable/overview/introduction-to-eclipse-che/">📄️ Eclipse Che</a></p></li><li><p><a href="https://github.com/manekinekko/awesome-devcontainers">📄️ Awesome DevContainer</a></p></li></ul></div>
 <aside class="notes"><div class="paragraph"><p>Liens vers :
 * La conf devfest sur coder
 * L&#8217;infrastructure de coder
