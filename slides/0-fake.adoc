@@ -1,7 +1,7 @@
 [%notitle]
 == Remplacer votre IDE par un CDE pour un embarquement immédiat !
 
-image::images/main_background.png[background, size=fill]
+image::images/bdxio.png[background, size=50%, position="bottom 50px right 100px"]
 
 === Les API RestFull sont-elles le futur du web ?
 

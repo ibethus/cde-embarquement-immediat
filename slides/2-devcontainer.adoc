@@ -146,6 +146,13 @@ echo 'Maven version $VERSION installed'
 * optim : à la construction de l'image plutôt qu'au démarrage du conteneur
 --
 
+[%auto-animate]
+=== DevContainers - Cycle de vie
+
+--
+image::images/lifecycle-devcontainers.svg[width=80%]
+--
+
 === Personnalisation de l'IDE
 
 [source,json,highlight=3..12]
