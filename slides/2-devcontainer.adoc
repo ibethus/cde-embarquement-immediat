@@ -71,13 +71,14 @@ image::images/dev-containers/2.png[width=300]
 ----
 {
 	"name": "Spacesuits dev container",
-	"image": "node:22"
+	"image": "mcr.microsoft.com/devcontainers/java:1-21-bullseye"
 }
 ----
 
 [NOTE.speaker]
 --
-Config minimum
+* Config minimum
+* déjà une bonne 100aine d'images de base
 --
 
 === Features
@@ -86,10 +87,10 @@ Config minimum
 ----
 {
 	"name": "Spacesuits dev container",
-	"image": "node:22",
+	"image": "mcr.microsoft.com/devcontainers/java:1-21-bullseye",
 	"features": {
-		"ghcr.io/devcontainers-extra/features/angular-cli:2": {
-			"version": "latest"
+		"ghcr.io/devcontainers-extra/features/maven-sdkman:2": {
+			"version": "3.9.11"
 		}
 	}
 }
@@ -107,10 +108,10 @@ Config minimum
 [source%linenums,sh,highlight=1..3]
 ----
 nanolayer install devcontainer-feature \
-    "ghcr.io/devcontainers-extra/features/npm-package:1.0.3" \
-    --option package='@angular/cli' --option version="$VERSION"
+    "ghcr.io/ebaskoro/devcontainer-features/sdkman:1.0.0" \
+    --option candidate='maven' --option version="$VERSION"
 
-echo 'Angular CLI version $VERSION installed'
+echo 'Maven version $VERSION installed'
 ----
 
 [NOTE.speaker]
@@ -125,14 +126,14 @@ echo 'Angular CLI version $VERSION installed'
 ----
 {
 	"name": "Spacesuits dev container",
-	"image": "node:22",
+	"image": "mcr.microsoft.com/devcontainers/java:1-21-bullseye",
 	"features": {
-		"ghcr.io/devcontainers-extra/features/angular-cli:2": {
-			"version": "latest"
+		"ghcr.io/devcontainers-extra/features/maven-sdkman:2": {
+			"version": "3.9.11"
 		}
 	},
-	"postCreateCommand": "npm i",
-	"forwardPorts": [ 4200 ]
+	"postCreateCommand": "cd backend/space-suit-back && mvn compile",
+	"forwardPorts": [ 8080 ]
 }
 ----
 
@@ -147,18 +148,17 @@ echo 'Angular CLI version $VERSION installed'
 
 === Personnalisation de l'IDE
 
-[source,json,highlight=3..13]
+[source,json,highlight=3..12]
 ----
 {
-	"forwardPorts": [ 4200 ],
+	"forwardPorts": [ 8080 ],
 	"customizations": {
 		"vscode": {
 			"settings": {
 				"editor.tabSize": 2
 			},
 			"extensions": [
-				"Angular.ng-template",
-				"ms-azuretools.vscode-docker"
+				"redhat.vscode-quarkus"
 			]
 		}
 	}
