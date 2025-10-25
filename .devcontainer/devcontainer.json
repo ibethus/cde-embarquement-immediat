@@ -1,0 +1,41 @@
+{
+	"name": "Reveal.js Dev Container with Docker",
+	"image": "mcr.microsoft.com/devcontainers/base:bullseye",
+
+	"features": {
+		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
+			"version": "20.10",
+			"enableNonRootDocker": "true",
+			"moby": "false"
+		},
+		"./features/reveal-js": {}
+	},
+
+	"remoteEnv": {
+		"LOCAL_WORKSPACE_FOLDER": "${localWorkspaceFolder}"
+	},
+
+	"postCreateCommand": {
+		"Move revealJs": "rm -Rf ./slides/reveal.js && mv /reveal.js ./slides/",
+		"Build slides": "docker run --rm -v $LOCAL_WORKSPACE_FOLDER/slides:/documents asciidoctor/docker-asciidoctor asciidoctor-revealjs index.adoc"
+	},
+
+	"forwardPorts": [ 5500 ],
+	"portsAttributes": {
+		"5500": {
+			"label": "Live server",
+			"onAutoForward": "openBrowser"
+		}
+	},
+
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ritwickdey.liveserver"
+			],
+			"settings": {
+				"liveServer.settings.root": "/slides"
+			}
+		}
+	}
+}

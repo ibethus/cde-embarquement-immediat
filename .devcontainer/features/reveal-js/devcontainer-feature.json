@@ -1,0 +1,23 @@
+{
+    "id": "reveal-js",
+    "version": "1.0.0",
+    "name": "Reveal.js",
+    "description": "Télécharge et installe Reveal.js depuis GitHub",
+    "documentationURL": "https://revealjs.com/",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": ["master", "4.6.1", "4.5.0"],
+            "default": "master",
+            "description": "Version de Reveal.js à télécharger (branch ou tag)"
+        },
+        "installPath": {
+            "type": "string",
+            "default": "/reveal.js",
+            "description": "Chemin où installer Reveal.js"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
