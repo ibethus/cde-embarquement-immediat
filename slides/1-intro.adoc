@@ -1,11 +1,9 @@
 [%auto-animate.columns.is-vcentered.transparency]
 == Remplacer votre IDE par un CDE pour un embarquement immédiat !
-image::images/main_background.png[background, size=fill]
 
 [%notitle.auto-animate.columns.is-vcentered.transparency]
 === Présentation
 
-image::images/main_background.png[background, size=fill]
 
 [.column.has-text-right.is-two-fifth]
 ****
@@ -32,7 +30,6 @@ image::images/nico.png[width=400]
 [%notitle.auto-animate.columns.is-vcentered.transparency]
 === Présentation
 
-image::images/main_background.png[background, size=fill]
 
 [.column.has-text-right.is-two-fifth]
 ****
