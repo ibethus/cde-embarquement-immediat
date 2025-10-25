@@ -25,7 +25,7 @@
 --
 * Initiée par Microsoft depuis 2022
 * Uniquement pour le développement (et la CI) mais pas pour la prod
-* Microsoft - json (DevFiles - RedHat - yaml)
+* Microsoft - json (DevFiles - RedHat - yaml -> CNCF)
 * Implémentée par de nombreux IDE (VsCode, IntelliJ, ...)
 * Implémentation par défaut via une CLI
 * Ivan : En fait c'est un docker-compose ?

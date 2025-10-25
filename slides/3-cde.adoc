@@ -21,26 +21,44 @@ Codeanywhere (2013)
 * Révolutionnaire à l'époque mais grosse limitation : pas de conteneurisation
 --
 
+=== Le _game changer_
+
+image::images/eclipseche.png[width=40%]
+(2014)
+
+[NOTE.speaker]
+--
+* Premier CDE basé sur des conteneurs Docker
+* Rapidement le concept des devfiles est incubé au sein du projet
+* EN 2019 Eclipse che supporte officiellement les devfiles
+--
+
 [.columns]
-=== Adoption par les _majors_
+=== Popularisation
 
 [.column.fade-up,step=2]
 --
 image::images/codespaces.png[width=30%]
 
 Microsoft GitHub codespace
---
 
-[.column.fade-up, step=1]
---
-image::images/google_workstation.png[width=30%]
-Google Cloud Workstations
+(2020)
 --
 
 [.column.fade-up, step=3]
 --
+image::images/google_workstation.png[width=30%]
+Google Cloud Workstations
+
+(2022)
+--
+
+[.column.fade-up, step=1]
+--
 image::images/devspaces.png[width=30%]
 RedHat OpenShift Dev Spaces
+
+(2019)
 --
 
 [NOTE.speaker]
