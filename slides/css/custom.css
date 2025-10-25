@@ -41,9 +41,10 @@
 body::after {
     content: url("../images/logo_event.png");
     position: fixed;
-    left: -47%;
-    bottom: -28%;
+    left: 20px;
+    bottom: 20px;
     transform: scale(0.1);
+    transform-origin: bottom left;
 }
 
 .title > .slide-background-content {
@@ -73,4 +74,8 @@ body::after {
 .sidebarblock.column.terminal {
     width: 95%;
     margin: -50px;
+}
+
+a {
+    color: #7D7DFA !important;
 }
