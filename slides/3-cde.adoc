@@ -24,7 +24,7 @@ Codeanywhere (2013)
 === Le _game changer_
 
 image::images/eclipseche.png[width=40%]
-(2014)
+(2014 - Supporté par Codenvy)
 
 [NOTE.speaker]
 --
@@ -58,7 +58,7 @@ Google Cloud Workstations
 image::images/devspaces.png[width=30%]
 RedHat OpenShift Dev Spaces
 
-(2019)
+(Rachète Codenvy en 2017)
 --
 
 [NOTE.speaker]
