@@ -4,7 +4,7 @@
 (spoiler : oui)
 
 [.columns.is-vcentered]
-=== Limitations
+=== Inconvénients
 
 [.column]
 --
@@ -53,7 +53,6 @@
 --
 * Onboarding : les nouveaux devs peuvent travailler le jour 0
 * Reproductible : même versions partout
-* Sécurité : code source ne quitte pas le serveur
 * Configuration : gérée par l'équipe DevOps
 Mais aussi :
 * Pas besoin de machines de guerre pour les devs
@@ -65,7 +64,6 @@ Mais aussi :
 * Grandes équipes 
 * Turnover important 
 * Configuration complexe
-* Sécurité cruciale
 * Formation tech
 * Projet open-source
 
