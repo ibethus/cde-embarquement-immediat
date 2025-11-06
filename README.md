@@ -9,6 +9,7 @@ Ce dépôt présente l'ensemble des sources de la conférence `Remplacer votre I
 * [📄️ Coder infrastructure](https://coder.com/docs/admin/infrastructure)
 * [📄️ Eclipse Che](https://eclipse.dev/che/docs/stable/overview/introduction-to-eclipse-che/)
 * [📄️ Awesome DevContainer](https://github.com/manekinekko/awesome-devcontainers)
+* [📰 Article de la conf](https://dev.to/onepoint/les-cloud-development-environments-cde-embarquement-immediat--729)
 
 ## Générer les slides en local
 
